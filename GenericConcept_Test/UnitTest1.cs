@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UC1_Generics_To_FindMaxValues;
+using UC2_MaxFloat;
 
-namespace UC1_Generics_To_FindMaxValues_Test
+namespace UC2_MaxFloat_Test
 {
     [TestClass]
     public class UnitTest1
@@ -24,6 +24,25 @@ namespace UC1_Generics_To_FindMaxValues_Test
         {
             int max = GenericClass<int>.maximum(5, 6, 8);
             Assert.AreEqual(8, max);
+        }
+        [TestMethod]
+        public void Given_MaxFloatNumber_1st_Position_ShouldReturnSame()
+        {
+            float max = GenericClass<float>.maximum(8.5f, 5.5f, 6.5f);
+            Assert.AreEqual(8.5f, max);
+        }
+        [TestMethod]
+        public void Given_MaxFloatNumber_2nd_Position_ShouldReturnSame()
+        {
+            float max = GenericClass<float>.maximum(5.5f, 8.5f, 6.5f);
+            Assert.AreEqual(8.5f, max);
+        }
+
+        [TestMethod]
+        public void Given_MaxFloatNumber_3rd_Position_ShouldReturnSame()
+        {
+            float max = GenericClass<float>.maximum(5.5f, 6.5f, 8.5f);
+            Assert.AreEqual(8.5f, max);
         }
     }
 }

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Generics_To_FindMaxValues\UC1_Generics_To_FindMaxValues.csproj" />
+    <ProjectReference Include="..\UC2_MaxFloat\UC2_MaxFloat.csproj" />
   </ItemGroup>
 
 </Project>

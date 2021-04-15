@@ -1,15 +1,17 @@
 ﻿using System;
 
-namespace UC1_Generics_To_FindMaxValues
+namespace UC2_MaxFloat
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("MaxInteger!");
-           int gc = GenericClass<int>.maximum(2, 14, 6);
-           Console.WriteLine(gc);
+            int gci = GenericClass<int>.maximum(2, 14, 16);
+            Console.WriteLine(gci);
+            Console.WriteLine("MaxFloat!");
+            float gcf = GenericClass<int>.maximum(2.25f, 14.43f, 6.15f);
+            Console.WriteLine(gcf);
         }
     }
-
 }
