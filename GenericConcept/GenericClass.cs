@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC3_MaxString
+namespace UC4_MoreThan_Three_Parameters
 {
     public class GenericClass<T> where T : IComparable
     {
@@ -33,5 +33,20 @@ namespace UC3_MaxString
                 max = z;
             return max;
         }
+
+
+        public static T maximum(params T[] elements)
+        {
+            T max = elements[0];
+            foreach (T element in elements)
+            {
+                if (element.CompareTo(max) > 0)
+                {
+                    max = element;
+                }
+            }
+            return max;
+        }
     }
+    
 }

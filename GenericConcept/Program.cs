@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UC3_MaxString
+namespace UC4_MoreThan_Three_Parameters
 {
     class Program
     {
@@ -15,7 +15,8 @@ namespace UC3_MaxString
             Console.WriteLine("MaxString!");
             string gcs = GenericClass<int>.maximum("Peach", "Apple", "Banana");
             Console.WriteLine(gcs);
-
+            int maxpara = GenericClass<int>.maximum(12, 35, 45, 13, 38);
+            Console.WriteLine(maxpara);
         }
     }
 }
