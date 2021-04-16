@@ -2,26 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC5_PrintMaxValues
+namespace Refactor_1
 {
     public class GenericClass<T> where T : IComparable
     {
-        public static T maximum(params T[] elements)
+        public static T maximum(T x, T y, T z)
         {
-            T max = elements[0];
-            foreach (T element in elements)
-            {
-                if (element.CompareTo(max) > 0)
-                {
-                    max = element;
-                }
-            }
-            printMax(max);
+            T max = x;
+            if (y.CompareTo(max) > 0)
+                max = y;
+            if (z.CompareTo(max) > 0)
+                max = z;
             return max;
-        }
-        public static void printMax(T element)
-        {
-            Console.WriteLine("Max Value: " + element);
         }
     }
 }

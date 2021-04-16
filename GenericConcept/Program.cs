@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace UC5_PrintMaxValues
+namespace Refactor_1
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            GenericClass<int>.maximum(2, 3, 4, 5);
+            Console.WriteLine("Hello World!");
         }
     }
 }

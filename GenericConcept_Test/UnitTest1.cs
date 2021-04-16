@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UC5_PrintMaxValues;
+using Refactor_1;
 
-namespace UC5_PrintMaxValues_Test
+namespace Refactor_1_Test
 {
     [TestClass]
     public class UnitTest1
@@ -63,25 +63,6 @@ namespace UC5_PrintMaxValues_Test
             string max = GenericClass<string>.maximum("Apple", "Banana", "Peach");
             Assert.AreEqual("Peach", max);
         }
-        [TestMethod]
-        public void Given_MaxStringVariableNumber_4rd_Position_ShouldReturnSame()
-        {
-            string max = GenericClass<string>.maximum("Apple", "Banana", "Peach", "World");
-            Assert.AreEqual("World", max);
-        }
-        [TestMethod]
-        public void Given_MaxFloatVariableNumber_1rd_Position_ShouldReturnSame()
-        {
-            float max = GenericClass<float>.maximum(234.56f, 23.6f, 26.89f, 67.8f);
-            Assert.AreEqual(234.56f, max);
-        }
-        [TestMethod]
-        public void Given_MaxIntegerVariableumber_3rd_Position_ShouldReturnSame()
-        {
-            int max = GenericClass<int>.maximum(12, 35, 45, 13, 38);
-            Assert.AreEqual(45, max);
-        }
-
 
     }
 }
