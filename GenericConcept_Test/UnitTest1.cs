@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UC4_MoreThan_Three_Parameters;
+using UC5_PrintMaxValues;
 
-namespace UC4_MoreThan_Three_Parameters_Test
+namespace UC5_PrintMaxValues_Test
 {
     [TestClass]
     public class UnitTest1
@@ -81,5 +81,7 @@ namespace UC4_MoreThan_Three_Parameters_Test
             int max = GenericClass<int>.maximum(12, 35, 45, 13, 38);
             Assert.AreEqual(45, max);
         }
+
+
     }
 }

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UC4_MoreThan_Three_Parameters\UC4_MoreThan_Three_Parameters.csproj" />
+    <ProjectReference Include="..\UC5_PrintMaxValues\UC5_PrintMaxValues.csproj" />
   </ItemGroup>
 
 </Project>
