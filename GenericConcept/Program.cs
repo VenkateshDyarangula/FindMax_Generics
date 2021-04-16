@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UC2_MaxFloat
+namespace UC3_MaxString
 {
     class Program
     {
@@ -12,6 +12,10 @@ namespace UC2_MaxFloat
             Console.WriteLine("MaxFloat!");
             float gcf = GenericClass<int>.maximum(2.25f, 14.43f, 6.15f);
             Console.WriteLine(gcf);
+            Console.WriteLine("MaxString!");
+            string gcs = GenericClass<int>.maximum("Peach", "Apple", "Banana");
+            Console.WriteLine(gcs);
+
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC2_MaxFloat
+namespace UC3_MaxString
 {
     public class GenericClass<T> where T : IComparable
     {
@@ -18,6 +18,15 @@ namespace UC2_MaxFloat
         public static float maximum(float x, float y, float z)
         {
             float max = x;
+            if (y.CompareTo(max) > 0)
+                max = y;
+            if (z.CompareTo(max) > 0)
+                max = z;
+            return max;
+        }
+        public static string maximum(string x, string y, string z)
+        {
+            string max = x;
             if (y.CompareTo(max) > 0)
                 max = y;
             if (z.CompareTo(max) > 0)
